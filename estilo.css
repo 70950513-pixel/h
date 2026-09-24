@@ -1,100 +1,80 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-   
-    --color1:#05AFF2;
-    --color2:#05C7F2;
-    --color3:#50ABBF;
-    --color4:#ACF2F2;
-    --color5:#F2F2F2;
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   --color1:#F2E527;
+   --color2:#403501;
+   --color3:#0D0D0D;
+   --color4:#F2D027;
+   background-image: url(imagenes/sw_fondo.jpg);  
 }
-#content{
-    width:45%;
+#contenedor{
+    width: 90%;
+    /*border:4px solid red;*/
     margin:25px auto;
-    background-color: var(--color2);
-    box-shadow: 4px 5px 10px;
-    background: linear-gradient(to bottom right, var(--color4), var(--color1));    
 }
-#cabecera,#cursos{
-    height: 100px;
-    padding:5px;
+#logo{
+    height: 150px;
 }
-#cabecera img{
-    height: 100%;   
+#search{
+    height: 50px;
 }
-#tareas{
-    text-align: center;
-}
-#personal{
-    height: 280px;
-    text-align: center ;   
-}
-#personal img{
-    height: 70%;
-    border-radius: 50%;
-    padding:5px;
-    background-color: #F2F2F2;
-    border:1px dashed red;      
-}
-#personal h1{    
-    text-shadow: 5px 5px 10px dimgray;
-}
-#personal p{
-    font-style: oblique;
-    color:var(--color5);    
-}
-#tareas{
-    height: 180px;     
-}
-#tareas ul{
+#cabecera{
+    border:2px solid var(--color2);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    flex-grow: 1;
-    height: 70%;  
-}
-#tareas li{
-    list-style-type: none;
-    margin: 3px;   
-    height: 20%;   
-    background-color: #F2F2F2;
-    align-content: center;   
-}
-#tareas a{
+    margin:10px;
     padding:10px;
-    text-decoration: none;
-    color:black;
-    height: 40px;    
 }
-#tareas a:hover{
-    background-color: dimgrey;
-    color:#F2F2F2
-}
-#tareas p{
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color:#F2F2F2;
-    padding:5px;
-    margin:5px 40px;
+#titulo{
+    text-align: center;
+    margin:10px;
+    padding:10px;
+    color:white
 }
 
-#cursos{
-    display:flex;
+#contenidos{
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 150px;
+    justify-content: space-around;
+    margin:10px;
+    padding:10px;
+   border:2px solid whitesmoke;
+   color:white;
+
+}
+.episodio{
+    /* border:3px solid green; */
+    width:30%;
+    padding:10px
+}
+.episodio img{
+    width: 90%;
+    display:block;
+    margin:auto;    
+}
+.episodio h2{
     text-align: center;
-    
+    margin:10px;
+    color: var(--color4)
 }
-.curso{
-    margin:5px;
+.episodio p{
+    text-align: justify;
 }
-.curso img{
-    height: 80%;
-    box-shadow: 2px 2px 5px dimgrey;
+#pie{
+    text-align: center;
+    border:3px solid var(--color2);
+    margin:10px;
+    padding:10px
 }
-figcaption{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#pie h3, #pie p{
+    padding:10px;
+    color:white
+}
+#pie img{
+    height: 50px;
+    margin:10px
 }
